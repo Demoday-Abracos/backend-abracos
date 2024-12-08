@@ -8,13 +8,13 @@ public class Imigrantes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "pk_id_imigrante")
-    private Integer pk_id_imigrante;
+    private Long pk_id_imigrante;
 
     @Column(name = "nome_imigrante")
     private String nome_imigrante;
 
     @Column(name = "email_imigrante")
-    private String email_imigrante;
+    private String emailImigrante;
 
     @Column(name = "senha_imigrante")
     private String senha_imigrante;
@@ -22,21 +22,21 @@ public class Imigrantes {
     @Column(name = "telefone_imigarante")
     private String telefone_imigrante;
 
-    public Integer getPk_id_imigrante() {
+    public Long getPk_id_imigrante() {
         return pk_id_imigrante;
     }
 
-    public void setPk_id_imigrante(Integer pk_id_imigrante) {
+    public void setPk_id_imigrante(Long pk_id_imigrante) {
         this.pk_id_imigrante = pk_id_imigrante;
     }
 
 
     public String getEmail_imigrante() {
-        return email_imigrante;
+        return emailImigrante;
     }
 
     public void setEmail_imigrante(String email_imigrante) {
-        this.email_imigrante = email_imigrante;
+        this.emailImigrante = email_imigrante;
     }
 
     public String getSenha_imigrante() {
